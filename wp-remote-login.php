@@ -97,13 +97,13 @@ function cpte_force_template( $template )
         $template = WP_PLUGIN_DIR .'/'. plugin_basename( dirname(__FILE__) ) .'/tpl-autologin.php';
 	}
  
-	if( is_page( 'autologin_api' ) ) {
+	if( is_page( 'autologin-api' ) ) { //die('this');
         $template = WP_PLUGIN_DIR .'/'. plugin_basename( dirname(__FILE__) ) .'/tpl-autologin-api.php';
 	}
  
     return $template;
 }
-add_filter( 'template_include', 'cpte_force_template' );
+add_filter( 'template_include', 'cpte_force_template',10,1 );
 
 
  
