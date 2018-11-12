@@ -5,7 +5,7 @@
 		<?php
 echo 'start</br>';
 // Define the URL where we will be sending a request for a random key
-    $api_url = "http://localhost/testone/autologin-api/";
+    $api_url = "http://DOMAIN-NAME-HERE/autologin-api/";
     
     // If you are using WordPress on website A, you can do the following to get the currently logged in user:
     //global $current_user; 
@@ -39,7 +39,7 @@ echo 'start</br>';
     // Set the received key to a variable
     $key = $data['key'];
 
-    echo '<h2 style="text-align:center;color:blue;"><i><a style="color:blue;" target="_blank" href = "http://localhost/testone/autologin?key='.$key.'">Login to site two</a></i></h2>';
+    echo '<h2 style="text-align:center;color:blue;"><i><a style="color:blue;" target="_blank" href = "http://DOMAIN-NAME-HERE/autologin?key='.$key.'">Login to site two</a></i></h2>';
 
     ?>
     </main><!-- #main -->
